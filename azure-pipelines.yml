@@ -20,5 +20,5 @@ steps:
     command: test
     projects: '**/*Tests/*.csproj'
     arguments: '--configuration $(buildConfiguration)'
-- script: dotnet build  --configuration $(buildconfiguration)
-  displayname: 'dotnet build $(buildconfiguration)' 
+- script: dotnet build --configuration $(buildconfiguration)
+  displayName: 'dotnet build $(buildconfiguration)' 
