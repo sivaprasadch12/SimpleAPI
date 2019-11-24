@@ -22,8 +22,7 @@ steps:
     arguments: '--configuration $(buildConfiguration)'
 - script: dotnet build --configuration $(buildconfiguration)
   displayName: 'dotnet build $(buildconfiguration)'
-
-  - task: DotNetCoreCLI@2
+ - task: DotNetCoreCLI@2
   displayName: 'dotnet publish --configuration $(buildConfiguration) --output $(Build.ArtifactStagingDirectory)'
   inputs:
     command: publish
