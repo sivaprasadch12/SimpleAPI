@@ -13,7 +13,7 @@ namespace SimpleAPI.Controllers
     {
         private static readonly string[] Summaries = new[]
         {
-            "Freezing10", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"
+            "Chilly", "Cool", "Mild", "Warm", "Balmy"
         };
 
         private readonly ILogger<WeatherForecastController> _logger;
@@ -38,7 +38,7 @@ namespace SimpleAPI.Controllers
         [HttpGet("{id}")]
         public ActionResult<string> Get(int id)
         {
-            return "siva";
+            return "sivap";
         }
     }
 }
